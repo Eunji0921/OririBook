@@ -1,3 +1,4 @@
+
 module.exports = {
     home: true,
     title: 'ORIRI BOOK',
@@ -5,11 +6,8 @@ module.exports = {
     base: '/oririBook/',
     themeConfig: {
         repo: 'oriri/book',
-        editLinks: true,
-        docsDir: 'docs',
         lastUpdated: 'Last Updated',
         search: true,
-        sidebarDepth: 3,
         nav: [
                 {
                     text: 'Home',
@@ -17,19 +15,61 @@ module.exports = {
                 },
                 {
                     text: 'Front-end',
-                    link: '/frontEnd/'
+                    items : [
+                        {
+                            text: 'Language', 
+                            items: [
+                                { text: 'JAVASCRIPT', link: '/frontEnd/javascript/' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    text: 'Back-end',
+                    items : [
+                        {
+                            text: 'Language', 
+                            items: [
+                                { text: 'JAVA', link: '/backEnd/java/' }
+                            ]
+                        }
+                    ]
                 }
         ],
         sidebar: {
             '/frontEnd/': [
-                            {
-                              title: 'DOCUMENT',
-                              collapsable: true,
-                              children: [
-                                  'javascript'
-                              ]
-                          }
-          ]
+                {
+                    'title': 'General', 
+                    'children': [
+                        '/frontEnd/javascript/general/engine'
+                    ]
+                },
+                {
+                    'title': 'DesignPattern', 
+                    'children': [
+                        '/frontEnd/javascript/designPattern/',
+                        '/frontEnd/javascript/designPattern/module',
+                        '/frontEnd/javascript/designPattern/singleton',
+                        '/frontEnd/javascript/designPattern/observer'
+                    ]
+                }
+            ],
+            '/backEnd/java/': [
+                {
+                    'title': 'General', 
+                    'children': [
+                        '/backEnd/java/general/JVM'
+                    ]
+                },
+                {
+                    'title': 'DesignPattern', 
+                    'children': [
+                        '/backEnd/java/designPattern/',
+                        '/backEnd/java/designPattern/singleton',
+                        '/backEnd/java/designPattern/strategy'
+                    ]
+                }
+            ]
         }
     },
 }
