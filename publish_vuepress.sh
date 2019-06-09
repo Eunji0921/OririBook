@@ -35,4 +35,6 @@ git commit -m 'Publish Docs'
 
 git push
 
+rm -rf .vuepress/dist
+
 git checkout master_sub
