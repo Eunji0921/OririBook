@@ -3,18 +3,36 @@
 # abort on errors
 # set -e
 
-npm install && npm run docs:build
+# ---
+
+# npm install && npm run docs:build
+
+# git checkout master
+
+# git pull origin master --rebase
+
+# cp -R .vuepress/dist/* .
+
+# git add .
+
+# git commit -a -m 'Publish Docs'
+
+# git push origin master
+
+# git checkout master_sub
+
+npm run docs:build
 
 git checkout master
 
-git pull origin master --rebase
+git merge master_sub
 
-cp -R .vuepress/dist/* .
+cp -R .vuepress/dist/ .
 
 git add .
 
-git commit -a -m 'Publish Docs'
+git commit -m 'Publish Docs'
 
-git push origin master
+git push
 
 git checkout master_sub
