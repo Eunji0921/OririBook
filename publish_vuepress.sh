@@ -17,4 +17,4 @@ git commit -a -m 'Publish Docs'
 
 git push origin master
 
-git checkout draft
+git checkout master_sub
