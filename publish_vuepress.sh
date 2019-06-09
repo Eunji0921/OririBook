@@ -3,7 +3,7 @@
 # abort on errors
 # set -e
 
-npm install && vuepress build
+npm install && npm run docs:build
 
 git checkout master
 
