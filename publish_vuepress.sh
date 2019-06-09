@@ -25,7 +25,7 @@ npm run docs:build
 
 git checkout master
 
-git merge master_sub
+# git merge master_sub
 
 cp -R .vuepress/dist/ .
 
