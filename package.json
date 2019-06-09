@@ -1,9 +1,11 @@
 {
-    "scripts": {
-        "docs:dev": "vuepress dev docs",
-        "docs:build": "vuepress build docs"
-    },
-    "dependencies": {
-        "vuepress": "^0.14.11"
-    }
+  "scripts": {
+    "docs:dev": "vuepress dev",
+    "docs:build": "vuepress build"
+  },
+  "dependencies": {
+    "@vuepress/plugin-back-to-top": "^1.0.0-alpha.44",
+    "vuepress-plugin-flowchart": "^1.4.3",
+    "vuepress": "^1.0.0-alpha.44"
+  }
 }
